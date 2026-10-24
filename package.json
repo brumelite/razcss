@@ -1,6 +1,6 @@
 {
   "name": "@brumelite/razcss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small, modern CSS reset with sensible defaults and no runtime dependencies.",
   "license": "MIT",
   "repository": {
