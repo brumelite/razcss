@@ -1,0 +1,63 @@
+/* RazCSS v1.0.0 | MIT License | A small, opinionated-but-neutral CSS reset. */
+
+/* Predictable box sizing, including generated content. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove common default outer spacing. */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure {
+  margin: 0;
+}
+
+/* Preserve deliberate list styles unless the author opts out. */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Avoid accidental sideways scrolling from oversized media. */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Form controls use the surrounding typeface without removing native affordances. */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* Long strings should wrap instead of breaking layout. */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Make anchors with no explicit href visually unmodified by default. */
+/* Intentionally preserve browser focus outlines, form appearance, and motion preferences. */

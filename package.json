@@ -1,0 +1,30 @@
+{
+  "name": "@brumelite/razcss",
+  "version": "1.0.0",
+  "description": "A small, modern CSS reset with sensible defaults and no runtime dependencies.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brumelite/razcss.git"
+  },
+  "bugs": "https://github.com/brumelite/razcss/issues",
+  "keywords": ["css", "reset", "modern-css", "stylesheet"],
+  "files": ["dist/reset.css", "LICENSE", "README.md"],
+  "style": "dist/reset.css",
+  "exports": {
+    ".": "./dist/reset.css",
+    "./dist/reset.css": "./dist/reset.css"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run build && npm test",
+    "prepack": "npm run check"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
